@@ -1,0 +1,14 @@
+footer {
+    background-color: aquamarine;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 0rem;
+}
+
+.footer-content {
+    background-color: aquamarine;
+     justify-content: center;
+     align-items: center;
+     margin: 1rem;
+}
