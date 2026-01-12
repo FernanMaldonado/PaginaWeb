@@ -1,14 +1,31 @@
 footer {
-    background-color: aquamarine;
     width: 100%;
+    background-color: aqua;
+    margin-top: auto;
+    font-size: 1rem;
+    display: flex;
     justify-content: center;
-    text-align: center;
-    margin-bottom: 0rem;
+    align-items: center;
+    height: 5rem;
 }
 
-.footer-content {
-    background-color: aquamarine;
-     justify-content: center;
-     align-items: center;
-     margin: 1rem;
+footer div {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+@media (max-width: 600px) {
+    footer div {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
 }
