@@ -4,7 +4,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: linear-gradient(to right, rgb(229, 247, 182), rgb(224, 252, 180));
+    background-image: linear-gradient(to right, rgb(37, 37, 35), rgb(28, 86, 119));
     font-family: Arial, sans-serif;
 }
 
@@ -16,26 +16,9 @@ body {
     color: black;
 }
 
-.botones {
-    position: absolute;
-    top: 1rem;
-    right: 2rem;
-    display: flex;
-    gap: 0.5rem;
-}
-
-@media (max-width: 700px) {
-    .botones {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 0.5rem;
-    }
-}
-
 
 .recuadro {
-    background-image: linear-gradient(to right, rgb(104, 250, 218), rgb(31, 240, 125));
+    background-image: linear-gradient(to right, rgb(59, 141, 189), rgb(61, 190, 223));
     width: 90%;
     max-width: 1200px;
     margin: 1.5rem auto;
@@ -68,7 +51,7 @@ body {
     max-width: 350px;
     padding: 1rem;
     margin-top: 1rem;
-    background-color: aqua;
+    background-color: rgb(49, 196, 196);
     font-size: 1.2rem;
     display: flex;
     justify-content: center;
@@ -82,12 +65,12 @@ body {
     margin-top: 1rem;
     margin-bottom: 2rem ;
     padding: 1rem;
-    background-image: linear-gradient(to right, rgb(248, 161, 111), rgb(240, 157, 109));
+    background-color: rgb(60, 154, 190);
     border-radius: 15px;
 }
 
 .parrafo p {
-    margin: 0.5;
+    margin: 1;
     text-align: center;
     line-height: 1.5;
 }
@@ -99,15 +82,45 @@ body {
 }
 
 .parrafo ul {
-    padding-left: 1.2rem;
+    list-style: none;
+    padding-left: 0;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
 }
 
 .parrafo li {
-    margin-bottom: 0.5rem;
+    background: linear-gradient(135deg, #1e3557, #00638a);
+    padding: 0.7rem 1rem;
+    border-radius: 12px;
+    font-size: 14px;
+    color: #ffffff;
+    position: relative;
+    padding-left: 2.2rem;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
+/* Ícono */
+.parrafo li::before {
+    content: "✔";
+    position: absolute;
+    left: 0.8rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #2ecc71;
+    font-weight: bold;
+}
+
+/* Hover dinámico */
+.parrafo li:hover {
+    transform: translateX(6px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+
 .cuadro {
-    background-image: linear-gradient(to right, rgb(27, 120, 163), rgb(235, 18, 18));
+    background-image: linear-gradient(to right, rgb(96, 230, 218), rgb(3, 121, 105));
     width: 90%;
     max-width: 1200px;
     margin: 1.5rem auto;
@@ -127,16 +140,32 @@ body {
     gap: 2rem;
     margin: 2rem;
     flex-wrap: wrap;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.imgCarnet img {
+    width: 100%;
+    padding: 2rem;
+    max-width: 250px;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+.imgCarnet img:hover {
+    transform: scale(1.12);
+    filter: brightness(1.1);
 }
 
 .inf {
     width: 60%;
-    font-size: 15px;
+    font-size: 14px;
     color: black;
     font-weight: bold;
     text-align: justify;
     padding: 1rem;
     border-radius: 15px;
+    line-height: 1.6;
+
 }
 
 .imgCarnet img {

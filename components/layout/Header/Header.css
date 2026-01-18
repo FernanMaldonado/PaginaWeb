@@ -3,7 +3,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    background-color: rgba(55, 231, 231, 0.363);
+    background-image: linear-gradient(to right, rgb(120, 195, 218), rgb(6, 141, 204));
 }
 
 @media (max-width: 600px) {
