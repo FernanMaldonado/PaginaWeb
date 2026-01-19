@@ -193,3 +193,85 @@ body {
         width: 100%;
     }
 }
+
+.datosDeMi {
+    width: 100%;
+    margin-left: 7rem;
+    margin-top: 0;
+    max-width: 350px;
+    padding: 1rem;
+    background: linear-gradient(135deg, #1e3557, #00638a);
+    border-radius: 15px;
+}
+
+.datosDeMi ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.datosDeMi li {
+    background: linear-gradient(135deg, #1e3557, #00638a);
+    margin: 0.5rem;
+    padding: 0.7rem 1rem;
+    border-radius: 12px;
+    font-size: 14px;
+    color: #ffffff;
+    position: relative;
+    padding-left: 2.2rem;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+
+.datosDeMi li::before {
+    content: "$";
+    position: absolute;
+    left: 0.8rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #2ecc71;
+    font-weight: bold;
+}
+
+.datosDeMi li:hover {
+    transform: translateX(6px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.datosDeMi p {
+color: #ffffff;
+text-align: center;
+padding: 1rem;
+line-height: 1.5;
+}
+
+.datosDeMi h2 {
+color: #ffffff;
+text-align: center;
+padding: 1rem;
+line-height: 1.5;
+}
+
+.dats {
+    display: flex;
+    flex-direction: row;   
+    gap: 20px;            
+    align-items: flex-start;
+    padding: 2rem;
+}
+
+@media (max-width: 768px) {
+    .dats {
+        flex-direction: column;
+    }
+
+    .datosDeMi{
+        padding: 1rem;
+        margin: 1rem;
+    }
+}
+
+
