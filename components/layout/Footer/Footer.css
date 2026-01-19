@@ -1,6 +1,6 @@
 footer {
     width: 100%;
-    background-color: aqua;
+    background-color: rgb(2, 0, 119);
     margin-top: auto;
     font-size: 1rem;
     display: flex;
@@ -19,7 +19,13 @@ footer div {
 
 footer a {
     text-decoration: none;
-    color: black;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+footer span {
+    text-decoration: none;
+    color: #ffffff;
     font-weight: 500;
 }
 
