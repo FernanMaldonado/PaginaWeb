@@ -64,7 +64,7 @@ body {
     width: 100%;
     max-width: 350px;
     margin-top: 1rem;
-    margin-bottom: 2rem ;
+    margin-bottom: 2rem;
     padding: 1rem;
     background: linear-gradient(135deg, #1e3557, #00638a);
     border-radius: 15px;
@@ -141,7 +141,7 @@ body {
     color: #ffffff;
     font-size: 2rem;
     font-weight: bold;
-    margin:3rem;
+    margin: 3rem;
 }
 
 .imgCarnet {
@@ -160,6 +160,7 @@ body {
     object-fit: contain;
     transition: transform 0.3s ease, filter 0.3s ease;
 }
+
 .imgCarnet img:hover {
     transform: scale(1.12);
     filter: brightness(1.1);
@@ -171,9 +172,9 @@ body {
     color: rgb(255, 255, 255);
     font-weight: bold;
     text-align: justify;
-    padding: 1rem;
+    padding: 0.5rem;
     border-radius: 15px;
-    line-height: 1.6;
+    line-height: 2;
 
 }
 
@@ -204,61 +205,25 @@ body {
     border-radius: 15px;
 }
 
-.datosDeMi ul {
-    list-style: none;
-    padding-left: 0;
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.7rem;
-}
-
-.datosDeMi li {
-    background: linear-gradient(135deg, #1e3557, #00638a);
-    margin: 0.5rem;
-    padding: 0.7rem 1rem;
-    border-radius: 12px;
-    font-size: 14px;
-    color: #ffffff;
-    position: relative;
-    padding-left: 2.2rem;
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-
-.datosDeMi li::before {
-    content: "$";
-    position: absolute;
-    left: 0.8rem;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #2ecc71;
-    font-weight: bold;
-}
-
-.datosDeMi li:hover {
-    transform: translateX(6px);
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
-}
 
 .datosDeMi p {
-color: #ffffff;
-text-align: center;
-padding: 1rem;
-line-height: 1.5;
+    color: #ffffff;
+    text-align: center;
+    padding: 0.5rem;
+    line-height: 1.5;
 }
 
 .datosDeMi h2 {
-color: #ffffff;
-text-align: center;
-padding: 1rem;
-line-height: 1.5;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    line-height: 1.5;
 }
 
 .dats {
     display: flex;
-    flex-direction: row;   
-    gap: 20px;            
+    flex-direction: row;
+    gap: 20px;
     align-items: flex-start;
     padding: 2rem;
 }
@@ -268,10 +233,8 @@ line-height: 1.5;
         flex-direction: column;
     }
 
-    .datosDeMi{
+    .datosDeMi {
         padding: 1rem;
         margin: 1rem;
     }
 }
-
-
