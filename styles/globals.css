@@ -110,7 +110,6 @@ body {
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-/* Ícono */
 .parrafo li::before {
     content: "✔";
     position: absolute;
@@ -121,7 +120,6 @@ body {
     font-weight: bold;
 }
 
-/* Hover dinámico */
 .parrafo li:hover {
     transform: translateX(6px);
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
